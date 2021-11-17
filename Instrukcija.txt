@@ -1,0 +1,8 @@
+[18:39] Žygimantas Pusvaškis
+## Užduoties įkėlimo instrukcijos.
+1. Sukurti GitHub repozitoriją.Instrukcijas, kaip susikurti GitHub repozitoriją rasite - https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/creating-a-new-repository
+2. Pakeitimus daryti atskiroje šakoje (pvz. dev), kad būtų galima sukurti Pull Request.Kaip galima sukurti Pull Request galite sužinoti čia - https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-requestNaują šaką galima susikurti įvykdžius `git checkout -b dev` komandą terminale.
+3. Kuriant sistemą pakeitimus nuolatos saugoti su pakeitimus su prasmingomis "commit" žinutėmis.
+4. Pabaigus projektą patikrinti ar visi pakeitimai yra nusiųsti į GitHub, sukurti Pull Request per GitHub puslapį į pagrindinę šaką (`main` arba `master`) ir pateikti nuorodą šiame "assignment".
+Jeigu to padaryti nepavyks galite tiesiog įkelti archyvuotus failus. Sėkmės!
+
