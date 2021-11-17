@@ -9,7 +9,8 @@
 }
 
 header {
-    display: block;
+    display: flex;
+    flex-direction: column;
     background-color: rgb(85, 68, 68);
     padding: 2rem;
     text-align: center;
@@ -17,9 +18,12 @@ header {
 }
 
 header input {
-    padding: .5rem .5rem .5rem 3rem;
+    padding: .5rem .5rem .5rem 3.5rem;
     font-size: 1.5rem;
     margin: 0 auto;
+    background-image: url("http://cdn.onlinewebfonts.com/svg/img_107644.png");
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .searchContainer {
@@ -36,7 +40,7 @@ header input {
     height: 40rem;
     justify-content: center;
     align-items: center;
-    background-image: url("https://d29fhpw069ctt2.cloudfront.net/photo/6239/preview/46925327-c7d1-46c7-aceb-8fa39a964e68_1280x1280.jpg");
+    background-image: url("https://wallpaper.sc/en/ipad/wp-content/uploads/2018/08/ipad-2048x2048-thumbnail_01585-256x256.jpg");
 }
 
 .hero h1{
@@ -46,20 +50,33 @@ header input {
 }
 
 .content {
+    display: block;
     text-align: center;
+    padding-bottom: 1rem;
+    padding-top: 2rem;
 }
 
 .content img {
     height: 15rem;
     border-radius: 50%;
+    padding-top: 1rem;
 }
 
 .content h2, h3 {
     color: chartreuse;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.content a {
+    display: block;
+    /* padding-bottom: 0.5rem; */
 }
 
 .email {
-    font-weight: 600;
+    text-decoration: none;
+    color: black;
+    text-align: center;
 }
 
 .atskirimas {
@@ -73,8 +90,46 @@ header input {
     text-align: center;
 }
 
+.footeris h3 {
+    padding-top: 1rem;
+}
+
 .footeris a {
     color: white;
     display: block;
     text-decoration: none;
+}
+
+@media only screen and (min-width: 1000px){
+    header {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .content {
+        margin-top: -11rem;
+    }
+    .content img {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+    .vidBlock {
+        display: inline-block;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+
+    .vidCont {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .footBlock {
+        display: inline-block;
+        vertical-align: top;
+        padding-right: 5rem;
+        padding-left: 5rem;
+    }
+    main p {
+        width: 50%;
+        margin: 0 auto;
+    }
 }
