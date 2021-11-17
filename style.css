@@ -1,8 +1,3 @@
-/* body {
-    width: 80%;
-    margin: 0 auto;
-} */
-
 .logo {
     height: 3rem;
     padding-bottom: 1.5rem;
@@ -14,7 +9,6 @@ header {
     background-color: rgb(85, 68, 68);
     padding: 2rem;
     text-align: center;
-
 }
 
 header input {
@@ -56,21 +50,43 @@ header input {
     padding-top: 2rem;
 }
 
+.blockWrap {
+    width: 60%;
+    margin: 0 auto;
+    /* margin: 0 auto; */
+}
+
+.vidBlock {
+    padding-top: 1rem;
+}
+
+.vidineKlase {
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+
 .content img {
     height: 15rem;
     border-radius: 50%;
-    padding-top: 1rem;
 }
 
 .content h2, h3 {
     color: chartreuse;
     margin-top: 0;
     margin-bottom: 0.5rem;
+    text-align: center;
 }
 
 .content a {
     display: block;
     /* padding-bottom: 0.5rem; */
+}
+
+.vidCont img {
+    height: 20rem;
 }
 
 .email {
@@ -85,6 +101,8 @@ header input {
 }
 
 .footeris {
+    display: flex;
+    flex-direction: column;
     background-color: rgb(85, 68, 68);
     padding: 1rem 0 2rem;
     text-align: center;
@@ -106,16 +124,34 @@ header input {
         justify-content: space-around;
     }
     .content {
-        margin-top: -11rem;
+        margin-top: -10rem;
     }
-    .content img {
+
+    /* .blockWrap {
+        margin: 0 auto;
+    } */
+
+    /* .content img {
         padding-left: 1.25rem;
         padding-right: 1.25rem;
+    } */
+
+    .vidCont img {
+        height: 10rem;
     }
+
+    .vidineKlase {
+        justify-content: space-between;
+    }
+
     .vidBlock {
         display: inline-block;
-        padding-left: 2.5rem;
+        text-align: left;
+        width: 40%;
+        padding: 4rem 2.5rem 3rem 2rem;
+        /* padding-left: 2rem;
         padding-right: 2.5rem;
+        padding-top: 6rem; */
     }
 
     .vidCont {
@@ -125,11 +161,20 @@ header input {
     .footBlock {
         display: inline-block;
         vertical-align: top;
-        padding-right: 5rem;
-        padding-left: 5rem;
+        /* padding-right: 5rem;
+        padding-left: 5rem; */
     }
     main p {
-        width: 50%;
+        width: 60%;
         margin: 0 auto;
+    }
+    .footeris {
+        flex-direction: row;
+
+    }
+    .footWrap {
+        width: 60%;
+        margin: 0 auto;
+        /* justify-content: space-between; */
     }
 }
