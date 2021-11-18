@@ -56,7 +56,6 @@ header input {
     width: 60%;
     margin: 0 auto;
     flex-direction: column;
-    /* margin: 0 auto; */
 }
 
 .vidBlock {
@@ -86,7 +85,6 @@ header input {
 
 .content a {
     display: block;
-    /* padding-bottom: 0.5rem; */
 }
 
 .vidCont img {
@@ -136,15 +134,6 @@ header input {
         margin-top: -10rem;
     }
 
-    /* .blockWrap {
-        margin: 0 auto;
-    } */
-
-    /* .content img {
-        padding-left: 1.25rem;
-        padding-right: 1.25rem;
-    } */
-
     .vidCont img {
         height: 10rem;
     }
@@ -158,9 +147,6 @@ header input {
         text-align: left;
         width: 40%;
         padding: 2.5rem 2rem 2.5rem 1.5rem;
-        /* padding-left: 2rem;
-        padding-right: 2.5rem;
-        padding-top: 6rem; */
     }
 
     .vidCont {
@@ -170,8 +156,6 @@ header input {
     .footBlock {
         display: inline-block;
         vertical-align: top;
-        /* padding-right: 5rem;
-        padding-left: 5rem; */
     }
 
     .blockWrap {
