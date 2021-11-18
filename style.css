@@ -1,25 +1,23 @@
-/* body {
-    width: 80%;
-    margin: 0 auto;
-} */
-
 .logo {
     height: 3rem;
     padding-bottom: 1.5rem;
 }
 
 header {
-    display: block;
+    display: flex;
+    flex-direction: column;
     background-color: rgb(85, 68, 68);
-    padding: 2rem;
+    padding: 2.5rem;
     text-align: center;
-
 }
 
 header input {
-    padding: .5rem .5rem .5rem 3rem;
+    padding: .5rem .5rem .5rem 3.5rem;
     font-size: 1.5rem;
     margin: 0 auto;
+    background-image: url("http://cdn.onlinewebfonts.com/svg/img_107644.png");
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .searchContainer {
@@ -36,17 +34,41 @@ header input {
     height: 40rem;
     justify-content: center;
     align-items: center;
-    background-image: url("https://d29fhpw069ctt2.cloudfront.net/photo/6239/preview/46925327-c7d1-46c7-aceb-8fa39a964e68_1280x1280.jpg");
+    background-image: url("https://wallpaper.sc/en/ipad/wp-content/uploads/2018/08/ipad-2048x2048-thumbnail_01585-256x256.jpg");
 }
 
 .hero h1{
     text-align: center;
     vertical-align: middle;
     color: brown;
+    font-size: 3rem;
 }
 
 .content {
+    display: block;
     text-align: center;
+    padding-bottom: 1rem;
+    padding-top: 2rem;
+}
+
+.blockWrap {
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+.vidBlock {
+    padding-top: 1rem;
+}
+
+.vidineKlase {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    margin: 0 auto;
+    justify-content: center;
+    padding-bottom: 1rem;
 }
 
 .content img {
@@ -56,10 +78,23 @@ header input {
 
 .content h2, h3 {
     color: chartreuse;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.content a {
+    display: block;
+}
+
+.vidCont img {
+    height: 20rem;
 }
 
 .email {
-    font-weight: 600;
+    text-decoration: none;
+    color: black;
+    text-align: center;
 }
 
 .atskirimas {
@@ -68,13 +103,77 @@ header input {
 }
 
 .footeris {
+    display: flex;
+    flex-direction: column;
     background-color: rgb(85, 68, 68);
     padding: 1rem 0 2rem;
     text-align: center;
+}
+
+.footeris h3 {
+    padding-top: 1rem;
 }
 
 .footeris a {
     color: white;
     display: block;
     text-decoration: none;
+}
+
+@media only screen and (min-width: 992px){
+    header {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .logo {
+        padding: 0;
+    }
+
+    .content {
+        margin-top: -10rem;
+    }
+
+    .vidCont img {
+        height: 10rem;
+    }
+
+    .vidineKlase {
+        justify-content: space-between;
+    }
+
+    .vidBlock {
+        display: inline-block;
+        text-align: left;
+        width: 40%;
+        padding: 2.5rem 2rem 2.5rem 1.5rem;
+    }
+
+    .vidCont {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .footBlock {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .blockWrap {
+        flex-direction: row;
+    }
+
+    main p {
+        width: 60%;
+        margin: 0 auto;
+    }
+    .footeris {
+        flex-direction: row;
+
+    }
+    .footWrap {
+        display: flex;
+        width: 60%;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
 }
