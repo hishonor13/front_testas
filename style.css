@@ -4,20 +4,21 @@
 }
 
 header {
+    background-color: rgb(85, 68, 68);
     display: flex;
     flex-direction: column;
-    background-color: rgb(85, 68, 68);
     padding: 2.5rem;
     text-align: center;
 }
 
 header input {
-    padding: .5rem .5rem .5rem 3.5rem;
-    font-size: 1.5rem;
-    margin: 0 auto;
     background-image: url("http://cdn.onlinewebfonts.com/svg/img_107644.png");
     background-size: contain;
     background-repeat: no-repeat;
+    font-size: 1.5rem;
+    padding: .5rem .5rem .5rem 3.5rem;
+    margin: 0 auto;
+
 }
 
 .searchContainer {
@@ -30,18 +31,18 @@ header input {
 }
 
 .hero {
+    align-items: center;
+    background-image: url("https://wallpaper.sc/en/ipad/wp-content/uploads/2018/08/ipad-2048x2048-thumbnail_01585-256x256.jpg");
     display: flex;
     height: 40rem;
     justify-content: center;
-    align-items: center;
-    background-image: url("https://wallpaper.sc/en/ipad/wp-content/uploads/2018/08/ipad-2048x2048-thumbnail_01585-256x256.jpg");
 }
 
 .hero h1{
-    text-align: center;
-    vertical-align: middle;
     color: brown;
     font-size: 3rem;
+    text-align: center;
+    vertical-align: middle;
 }
 
 .content {
@@ -53,9 +54,9 @@ header input {
 
 .blockWrap {
     display: flex;
-    width: 60%;
-    margin: 0 auto;
     flex-direction: column;
+    margin: 0 auto;
+    width: 60%;
 }
 
 .vidBlock {
@@ -65,15 +66,19 @@ header input {
 .vidineKlase {
     display: flex;
     justify-content: center;
-    width: 60%;
     margin: 0 auto;
-    justify-content: center;
     padding-bottom: 1rem;
+    width: 60%;
+}
+
+.vidineKlase img {
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
 }
 
 .content img {
-    height: 15rem;
     border-radius: 50%;
+    height: 15rem;
 }
 
 .content h2, h3 {
@@ -92,20 +97,21 @@ header input {
 }
 
 .email {
-    text-decoration: none;
     color: black;
+    text-decoration: none;
     text-align: center;
 }
 
 .atskirimas {
-    height: 1.5rem;
     background-color: darkgoldenrod;
+    height: 1.5rem;
+
 }
 
 .footeris {
+    background-color: rgb(85, 68, 68);
     display: flex;
     flex-direction: column;
-    background-color: rgb(85, 68, 68);
     padding: 1rem 0 2rem;
     text-align: center;
 }
@@ -145,8 +151,8 @@ header input {
     .vidBlock {
         display: inline-block;
         text-align: left;
-        width: 40%;
         padding: 2.5rem 2rem 2.5rem 1.5rem;
+        width: 40%;
     }
 
     .vidCont {
@@ -163,8 +169,8 @@ header input {
     }
 
     main p {
-        width: 60%;
         margin: 0 auto;
+        width: 60%;
     }
     .footeris {
         flex-direction: row;
@@ -172,8 +178,8 @@ header input {
     }
     .footWrap {
         display: flex;
-        width: 60%;
-        margin: 0 auto;
         justify-content: space-between;
+        margin: 0 auto;
+        width: 60%;
     }
 }
