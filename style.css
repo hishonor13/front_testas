@@ -7,7 +7,7 @@ header {
     display: flex;
     flex-direction: column;
     background-color: rgb(85, 68, 68);
-    padding: 2rem;
+    padding: 2.5rem;
     text-align: center;
 }
 
@@ -41,6 +41,7 @@ header input {
     text-align: center;
     vertical-align: middle;
     color: brown;
+    font-size: 3rem;
 }
 
 .content {
@@ -51,8 +52,10 @@ header input {
 }
 
 .blockWrap {
+    display: flex;
     width: 60%;
     margin: 0 auto;
+    flex-direction: column;
     /* margin: 0 auto; */
 }
 
@@ -62,6 +65,7 @@ header input {
 
 .vidineKlase {
     display: flex;
+    justify-content: center;
     width: 60%;
     margin: 0 auto;
     justify-content: center;
@@ -118,11 +122,16 @@ header input {
     text-decoration: none;
 }
 
-@media only screen and (min-width: 1000px){
+@media only screen and (min-width: 992px){
     header {
         flex-direction: row;
         justify-content: space-around;
     }
+
+    .logo {
+        padding: 0;
+    }
+
     .content {
         margin-top: -10rem;
     }
@@ -148,7 +157,7 @@ header input {
         display: inline-block;
         text-align: left;
         width: 40%;
-        padding: 4rem 2.5rem 3rem 2rem;
+        padding: 2.5rem 2rem 2.5rem 1.5rem;
         /* padding-left: 2rem;
         padding-right: 2.5rem;
         padding-top: 6rem; */
@@ -164,6 +173,11 @@ header input {
         /* padding-right: 5rem;
         padding-left: 5rem; */
     }
+
+    .blockWrap {
+        flex-direction: row;
+    }
+
     main p {
         width: 60%;
         margin: 0 auto;
@@ -173,8 +187,9 @@ header input {
 
     }
     .footWrap {
+        display: flex;
         width: 60%;
         margin: 0 auto;
-        /* justify-content: space-between; */
+        justify-content: space-between;
     }
 }
